@@ -131,7 +131,7 @@ GSDME_negative.pos_reg_T_cell_prolif1.values <- GSDME_negative[["pos_reg_T_cell_
 #test IL1A+ against IL1A- for pro-inflammatory signature score with wilcoxon
 wilcox_pval_GSDME_pos_reg_T_cell_prolif <- wilcox.test(GSDME_positive.pos_reg_T_cell_prolif1.values, GSDME_negative.pos_reg_T_cell_prolif1.values, alternative = "greater")
 
-#show p-values for all comparisons
+#show p-values for all comparisons, these are the p-values used in the plot titles
 wilcox_pval_clusters_pro_inflam
 wilcox_pval_clusters_anti_inflam
 wilcox_pval_IL1A_pro_inflam
